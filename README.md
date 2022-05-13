@@ -1,3 +1,4 @@
-# personal-website
-Just a website I'd like to use for jotting down my thoughts / tips during my time at the university.
+# Personal Website
+>>>>>>> e83266d23877d89d46a1652da0821e49fa17bb71
 
+// Inspired by Dexter Chua
