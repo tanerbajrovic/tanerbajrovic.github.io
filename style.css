@@ -6,7 +6,6 @@ body {
     padding: 0;
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* background-color: #0B0C10; */
 }
 
 header {
@@ -30,10 +29,9 @@ main {
 
 h1, h2, h3 {
     font-weight: normal;
-    font-family: 'Marcellus SC', serif;
+    font-family: 'Marcellus SC';
     margin-bottom: 0.2em;
     margin-top: 0.8em;
-    /* color: #43474D; */
     color: #6f1616;
 }
 

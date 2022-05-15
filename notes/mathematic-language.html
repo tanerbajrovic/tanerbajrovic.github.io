@@ -4,27 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="notes-style.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/favicon.ico" />
+     <!-- Fonts -->
+     <link rel="preload" as="font" href="../assets/fonts/marcellus_sc/MarcellusSC-Regular.ttf" type="font/ttf" crossorigin="anonymous"/>
+     <!-- CSS -->
+     <link rel="stylesheet" href="../fonts.css">
+     <link rel="stylesheet" href="notes-style.css">
     <!-- KateX Support -->
-    <link rel="stylesheet" href="katex-0-15-3.min.css">
+    <link rel="stylesheet" href="../katex-0-15-3.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.js" integrity="sha384-D0gipC03W+lifpletIVjX+11DUvrzNAMhVux0JrrAMt9Ufgu9HcPdS5GxZSDmNxx" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
-        onload="renderMathInElement(document.body);"></script>
+      onload="renderMathInElement(document.body, {
+        delimiters: [
+            {left: '$', right: '$', display: false}
+        ]
+      });">
+    </script>
     <title>
-        Taner Bajrović | Blog
+        Taner Bajrović
     </title>
 </head>
 <body>
     <header>
         Mathematical Language
-        <div id="date">
-          13 May, 2022
-        </div>
+        <div id="date">13 May, 2022</div>
     </header>
     <main>
+      <div id = "quote">
+        <p>Quote</p>
+      </div>
       <section>
         <h1>Test</h1>
         <p>
@@ -35,7 +43,7 @@
           Donec id neque ac sem fermentum sollicitudin vel sed augue. Interdum et malesuada fames ac ante ipsum primis in faucibus.
         </p>
         <p>
-          In other words, $x$ means a lot of things.
+          In other words, $p$ means a lot of things. But this can be avoided if we treat it as $p = 2$.
         </p>
       </section>
       <footer>

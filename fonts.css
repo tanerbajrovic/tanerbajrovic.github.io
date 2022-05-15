@@ -3,7 +3,24 @@
   font-family: 'Marcellus SC';
   font-style: normal;
   font-weight: 400;
-  src: local('Marcellus SC'), local('MarcellusSC-Regular'),
-       url('fonts/marcellus-sc-v7-latin-regular.woff2') format('woff2'),
-       url('fonts/marcellus-sc-v7-latin-regular.woff') format('woff');
+  src: local('Marcellus SC'),
+       url('/assets/fonts/marcellus_sc/marcellus-sc-v7-latin-regular.woff2') format('woff2'),
+}
+
+/* recia light */
+@font-face {
+  font-family: 'Recia-Light';
+  src: local('/assets/fonts/recia/Recia-Light.woff2') format('woff2');
+       font-weight: 300;
+       font-display: swap;
+       font-style: normal;
+}
+
+/* recia semibold italic */
+@font-face {
+  font-family: 'Recia-SemiboldItalic';
+  src: local('/assets/fonts/recia/Recia-SemiboldItalic.woff2') format('woff2');
+       font-weight: 600;
+       font-display: swap;
+       font-style: italic;
 }
