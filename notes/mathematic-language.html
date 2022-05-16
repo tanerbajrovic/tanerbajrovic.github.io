@@ -16,7 +16,8 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
       onload="renderMathInElement(document.body, {
         delimiters: [
-            {left: '$', right: '$', display: false}
+            {left: '$', right: '$', display: false},
+            {left: '$$', right: '$$', display: true}
         ]
       });">
     </script>
@@ -27,11 +28,11 @@
 <body>
     <header>
         Mathematical Language
-        <div id="date">13 May, 2022</div>
+        <div id="date">15 May, 2022</div>
     </header>
     <main>
       <div id = "quote">
-        <p>Quote</p>
+        <p>"The limits of my language are the limits of my world." &#8212 Wittgenstein</p>
       </div>
       <section>
         <h1>Test</h1>
@@ -44,6 +45,13 @@
         </p>
         <p>
           In other words, $p$ means a lot of things. But this can be avoided if we treat it as $p = 2$.
+        </p>
+      </section>
+      <section>
+        <h1>Another Way of Thinking</h1>
+        <p>
+          For example, university mathematics often uses terms like <b>necessary condition</b> or <b>sufficient condition</b>. In mathematical terms, that is $A \implies B$ and $B \implies A$. 
+          \begin{align*}a&=b+c\\d+e&=f\end{align*}
         </p>
       </section>
       <footer>

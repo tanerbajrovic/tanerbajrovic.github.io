@@ -4,23 +4,66 @@
   font-style: normal;
   font-weight: 400;
   src: local('Marcellus SC'),
-       url('/assets/fonts/marcellus_sc/marcellus-sc-v7-latin-regular.woff2') format('woff2'),
+       url('assets/fonts/marcellus_sc/marcellus-sc-v7-latin-regular.woff2') format('woff2');
+}
+
+/* recia regular */
+@font-face {
+  font-family: 'Recia-Regular';
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+  src: local('Recia-Regular'),
+       url('assets/fonts/recia/Recia-Regular.woff2') format('woff2');
+}
+
+
+/* recia medium */
+@font-face {
+  font-family: 'Recia-Medium';
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+  src: local('Recia-Medium'),
+       url('assets/fonts/recia/Recia-Regular.woff2') format('woff2');
+}
+
+/* recia bold */
+@font-face {
+  font-family: 'Recia-Bold';
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+  src: local('Recia-Bold'),
+       url('assets/fonts/recia/Recia-Bold.woff2') format('woff2');
 }
 
 /* recia light */
 @font-face {
   font-family: 'Recia-Light';
-  src: local('/assets/fonts/recia/Recia-Light.woff2') format('woff2');
-       font-weight: 300;
-       font-display: swap;
-       font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+  src: local('Recia-Light'),
+       url('assets/fonts/recia/Recia-Light.woff2') format('woff2');
+}
+
+/* recia semibold */
+@font-face {
+  font-family: 'Recia-Semibold';
+  font-weight: 600;
+  font-display: swap;
+  font-style: italic;
+  src: local('Recia-Semibold'),
+       url('assets/fonts/recia/Recia-Semibold.woff2') format('woff2');
 }
 
 /* recia semibold italic */
 @font-face {
   font-family: 'Recia-SemiboldItalic';
-  src: local('/assets/fonts/recia/Recia-SemiboldItalic.woff2') format('woff2');
-       font-weight: 600;
-       font-display: swap;
-       font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  font-style: italic;
+  src: local('Recia-SemiboldItalic'),
+       url('assets/fonts/recia/Recia-SemiboldItalic.woff2') format('woff2');
 }
