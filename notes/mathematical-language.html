@@ -16,43 +16,135 @@
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
       onload="renderMathInElement(document.body, {
         delimiters: [
-            {left: '$', right: '$', display: false},
-            {left: '$$', right: '$$', display: true}
+          {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false}
         ]
       });">
     </script>
     <title>
-        Taner Bajrović
+        Taner Bajrović | Mathematical Language
     </title>
 </head>
 <body>
     <header>
         Mathematical Language
-        <div id="date">15 May, 2022</div>
+        <div id="date">1 August, 2022</div>
     </header>
     <main>
       <div id = "quote">
         <p>"The limits of my language are the limits of my world." &#8212 Wittgenstein</p>
       </div>
       <section>
-        <h1>Test</h1>
+        <h1>Introduction</h1>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat, nisi non dapibus sollicitudin, diam risus pharetra eros, 
-          blandit feugiat turpis tortor id enim. Ut erat nisl, scelerisque et tincidunt vel, scelerisque quis mauris. Donec nisl lorem, 
-          porttitor dapibus lectus vel, sollicitudin tristique elit. Duis ultrices in risus et blandit. Sed ornare mauris vitae feugiat placerat. 
-          Sed in tortor nibh. Nullam id tincidunt diam. Vestibulum fringilla nisi vel eros semper, vitae hendrerit leo tincidunt. 
-          Donec id neque ac sem fermentum sollicitudin vel sed augue. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+          Anyone who has tried learning university level mathematics knows that this kind of maths is very different from highschool maths. 
+          Highschool maths is mostly focused on <i>computation</i> and the problems vary only slightly — 
+          university maths puts an emphasis on <i>concepts</i> while computation remains a separate issue. 
+          <i>Now, do you see a problem?</i>
         </p>
         <p>
-          In other words, $p$ means a lot of things. But this can be avoided if we treat it as $p = 2$.
+          After spending four years on learning how to follow patterns, you’re now asked to appreciate mathematical rigour and use mathematical
+          language to express your ideas. I certainly have (had) issues with this — but here’s what I’ve been working on so far and some revelations 
+          I’ve had in the meantime. 
         </p>
       </section>
       <section>
-        <h1>Another Way of Thinking</h1>
+        <h1>Another Way of Thinking: Logic</h1>
         <p>
-          For example, university mathematics often uses terms like <b>necessary condition</b> or <b>sufficient condition</b>. In mathematical terms, that is $A \implies B$ and $B \implies A$. 
-          \begin{align*}a&=b+c\\d+e&=f\end{align*}
+          As with any game, in order to play it effectively you need to be familiar with the rules. Similarly, to learn the rules you must already be 
+          familiar with the language those rules are expressed in. In mathematics, mathematical logic is that language &#8212 mastering it means that 
+          you can begin to learn the rules &#8212 axioms, definitions, theorems and lemmas &#8212 all expressed using this language.
         </p>
+        <p>
+          It's no surprise then that getting comfortable with logic is a fundamental step towards learning higher level mathematics. 
+          In mathematics, almost everything revolves around logic. 
+        </p>
+        <h2>Implication</h2>
+        <p>
+          Conjuction and disjunction are relatively straight-forward and intuitive logical operations. Implication, however, is usually 
+          something that seems unnatural. You see, while the statement like $\phi \implies \psi$ reads as "$\phi$ implies $\psi$", 
+          it should be noted that mathematical implication differentiates <b>causality</b> from <b>conditionality</b>. In fact, mathematical 
+          implication cares <i>only</i> about conditionality, while the causality (that one event intuitively follows from the other) is not important.
+          For this reason, mathematicians often call this operation the conditional.
+        </p>
+        <div id="example">
+          <h3>Example</h3>
+          <p>
+            Let's illustrate this with the following example: 
+            $$\boxed{\text{Julius Ceasar is dead} \implies \text{Barack Obama was the US president}}$$
+            This statement is true because its conditionality is true, even though there's absolutely no <i>causality</i> here (for all we know). It's conditionally true 
+            since statements "Julius Ceasar is dead" and "Barack Obama was the US president" are both true.
+          </p>
+        </div>
+        <div id="example">
+          <h3>Example</h3>
+          <p>
+          Now consider the next example:
+            $$\boxed{\color{red} \text{A person is tall} \implies \text{A person is good at basketball}}$$
+            This statement is false because of its conditionality — it doesn't matter that it might be intuitive and has some potential causality.
+            It's conditionally false since you can always find a person who is tall and not good at basketball. Because of that, this implication doesn't hold. 
+          </p>
+        </div>
+        <h2>Beauty in Logic</h2>
+        <p>
+          One of the beautiful things about logic is that once you get the hang of implication, you can appreciate the 
+          way we've defined another logical operation: <b>equivalence</b>. In fact, equivalence just means that we have $\phi \implies \psi$ and $\psi \implies \phi$ 
+          at the same time (in conjuction).
+          $$\begin{array}{|c|c|c|c|c|}
+          \phi & \psi & I_1: \phi \implies \psi & I_2: \psi \implies \phi & I_1 \land I_2 \\ % Use & to separate the columns
+          \hline % Put a horizontal line between the table header and the rest.
+          T & T & T & T & T \\
+          T & F & F & T & F \\
+          F & T & T & F & F \\
+          F & F & T & T & T \\
+          \end{array}$$
+          Because both conditionals (from left to right and from right to left) hold in this case, we also call this the biconditional. 
+          We write the equivalence like $\phi \Leftrightarrow \psi$.
+        </p>
+        <div id="example">
+          <h3>Example</h3>
+          <p>
+          Consider this as an example. For natural numbers $m, n$, saying that $mn$ is odd is equivalent to saying that $m$ is odd and $n$ is odd 
+          at the same time. In other words, 
+          $$\text{$mn$ is odd} \Leftrightarrow \text{$m$ is odd} \land \text{$n$ is odd}$$ 
+            If we continue to unpack this, we have two conditionals. First, we have 
+            $$I_1: \boxed{\text{$mn$ is odd} \implies \text{$m$ is odd} \land \text{$n$ is odd}}$$
+            and then
+            $$I_2: \boxed{\text{$mn$ is odd} \impliedby \text{$m$ is odd} \land \text{$n$ is odd}}$$
+            We've denoted these conditionals as $I_1$ and $I_2$, respectively. Note that the direction of implication in $I_2$ is reversed in 
+            comparison with $I_1$. Then our equivalence statement can be expressed like
+            $$\boxed{\text{$mn$ is odd} \Leftrightarrow \text{$m$ is odd} \land \text{$n$ is odd} \equiv I_1 \land I_2}$$
+          </p>
+        </div>
+      </section>
+      <section>
+        <h1>Limits of Our Language</h1>
+        <p>
+          I began this writing with a quote from a famous philosopher <a href="https://en.wikipedia.org/wiki/Ludwig_Wittgenstein">Ludwig Wittgenstein</a>. 
+          He claims that the limits of our language are in fact the limits of our world. I believe this to be a very profound insight in general as well as 
+          a great mental note to keep when learning subjects like mathematics. 
+        </p>
+        <p>
+          In other words: "If you become proficient at mathematical logic (the language of mathematics), 
+          then you also expand your mathematical world — provided you now learn the rules expressed in this language". 
+        </p>
+      </section>
+      <section>
+        <h1>Some Advice</h1>
+        <p>
+          To wrap this up, here are some things/resources I would've appreciated someone telling me about when I started university. If you're a freshman 
+          or even if you're going off to university in a few months, I'd recommend checking these out.
+        </p>
+        <h2>Online Courses</h2>
+        <ul>
+          <li><a href="https://www.coursera.org/learn/mathematical-thinking"><b>Introduction to Mathematical Thinking</b></a></li>
+          <li><a href="https://www.coursera.org/learn/learning-how-to-learn"><b>Learning How to Learn</b></a></li>
+        </ul> 
+        <h2>Books</h2>
+        <ul>
+          <li><b>Book of Proof</b> by Richard H. Hammack</li>
+          <li><b>The Art and Craft of Problem Solving</b> by Paul Zeitz</li>
+        </ul>
       </section>
       <footer>
         <a href="/">< Back to Home Page</a>

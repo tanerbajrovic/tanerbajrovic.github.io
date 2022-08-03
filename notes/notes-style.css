@@ -10,7 +10,7 @@ body {
 
 header {
     font-weight: normal;
-    font-family: 'Marcellus SC';
+    font-family: 'Recia-Medium';
     font-size: 2.5em;
     width: 90%;
     max-width: 600px;
@@ -25,6 +25,7 @@ main {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    text-align: justify;
 }
 
 h1, h2, h3 {
@@ -59,17 +60,19 @@ a:hover {
 div {
     margin-left: auto;
     margin-right: auto;
-    padding-top: 0.3em;
-    padding-bottom: 0.3em;
+    margin-top: 0.8em;
+    padding-top: 0.2mm;
+    padding-bottom: 0.2mm;
 }
 
 #date {
     font-size: 0.4em;
     text-align: right;
-    font-family: 'Recia-Medium';
+    font-family: 'Recia-Bold';
     color: #337ab7;
 }
 
+/* Divs */
 #quote {
     font-family: 'Recia-SemiboldItalic';
     border: #337ab7;
@@ -79,4 +82,31 @@ div {
     padding-left: 0.5em;
     padding-right: 0.5em;
     background-color: #f5f5f5;
+}
+
+#example {
+    border: #6f1616;
+    border-width: 0.2em;
+    border-style: groove;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+#definition {
+    font-family: 'Recia-Light';
+    border: #9b9b9b;
+    border-width: 0.2em;
+    border-style: groove;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+#definition h3 {
+    color:black;
+}
+
+
+/* KaTeX */
+.katex {
+    font-size: 1.1em;
 }
