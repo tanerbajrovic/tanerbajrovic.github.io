@@ -54,7 +54,10 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: wavy;
+    color:aliceblue;
+    background-color:#337ab7;
+    transition-duration: 0.25s;
 }
 
 div {
