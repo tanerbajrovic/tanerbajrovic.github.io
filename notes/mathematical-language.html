@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/favicon.ico" />
-     <!-- Fonts -->
-     <link rel="preload" as="font" href="../assets/fonts/marcellus_sc/MarcellusSC-Regular.ttf" type="font/ttf" crossorigin="anonymous"/>
-     <!-- CSS -->
-     <link rel="stylesheet" href="../styles/fonts.css">
-     <link rel="stylesheet" href="../styles/notes-style.css">
+    <!-- Fonts -->
+    <link rel="preload" as="font" href="../assets/fonts/marcellus_sc/MarcellusSC-Regular.ttf" type="font/ttf" crossorigin="anonymous"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/fonts.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/notes-style.css">
     <!-- KateX Support -->
     <link rel="stylesheet" href="../styles/katex-0-15-3.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.3/dist/katex.js" integrity="sha384-D0gipC03W+lifpletIVjX+11DUvrzNAMhVux0JrrAMt9Ufgu9HcPdS5GxZSDmNxx" crossorigin="anonymous"></script>
@@ -27,10 +28,10 @@
 <body>
     <header>
         Mathematical Language
-        <div id="date">1 August, 2022</div>
+        <div class="date">1 August, 2022</div>
     </header>
     <main>
-      <div id = "quote">
+      <div class = "quote">
         <p>"The limits of my language are the limits of my world." &#8212 Wittgenstein</p>
       </div>
       <section>
@@ -66,7 +67,7 @@
           implication cares <i>only</i> about conditionality, while the causality (that one event intuitively follows from the other) is not important.
           For this reason, mathematicians often call this operation the conditional.
         </p>
-        <div id="example">
+        <div class="example">
           <h3>Example</h3>
           <p>
             Let's illustrate this with the following example: 
@@ -75,7 +76,7 @@
             since statements "Julius Ceasar is dead" and "Barack Obama was the US president" are both true.
           </p>
         </div>
-        <div id="example">
+        <div class="example">
           <h3>Example</h3>
           <p>
           Now consider the next example:
@@ -100,7 +101,7 @@
           Because both conditionals (from left to right and from right to left) hold in this case, we also call this the biconditional. 
           We write the equivalence like $\phi \Leftrightarrow \psi$.
         </p>
-        <div id="example">
+        <div class="example">
           <h3>Example</h3>
           <p>
           Consider this as an example. For natural numbers $m, n$, saying that $mn$ is odd is equivalent to saying that $m$ is odd and $n$ is odd 
